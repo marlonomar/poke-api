@@ -12,8 +12,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
 //routers
-app.use(require('./Routers/index'))
-app.use(require('./Routers/tipos-pokemon'))
+app.use(require('./src/Routers/tipos-pokemon'))
 
 //starting server
 app.listen(app.set('port'),()=>{
